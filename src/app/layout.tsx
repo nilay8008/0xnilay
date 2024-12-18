@@ -13,7 +13,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Frontend | Advance",
+  title: "Nilay Patel",
   description: "Frontend Advance Personal portfolio",
 };
 
