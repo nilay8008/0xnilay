@@ -24,7 +24,7 @@ export default function Intro() {
       id="home"
       className="mb-28 max-w-[75rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
-      <div className="flex items-center justify-center">
+      <div className="flex justify-center">
         <div className="relative">
           
           <motion.div
@@ -40,8 +40,8 @@ export default function Intro() {
            
             <Image
               src="/boy.png"
-              width="480"
-              height="480"
+              width="200"
+              height="200"
               alt="portrait"
               quality="100"
               priority={true}
@@ -51,13 +51,13 @@ export default function Intro() {
           </motion.div> 
 
           <motion.span
-            className="text-6xl absolute bottom-8 right-12"
+            className="text-6xl absolute bottom-1 right-1"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
               stiffness: 125,
-              damping: 10,
+              damping: 11,
               duration: 0.2,
             }}
           >
@@ -77,9 +77,9 @@ export default function Intro() {
       </Fade>
 
       
-
+<div></div>
       <motion.div
-        className="flex sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
+        className="flex flex-wrap justify-center sm:flex-row items-center gap-x-4 gap-y-4 max-w-5xl mx-auto gap-4 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -88,13 +88,12 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 dark:bg-white/10 active:scale-105 transition"
+          className="group bg-gray-900 text-white p-4 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 dark:bg-white/10 active:scale-105 transition"
           onClick={() => {
             setActiveSection("#contact");
             setTimeOfLastClick(Date.now());
           }}
-        >
-          Connect <Mail color={"#9ca3af"} />
+        > <Mail color={"#9ca3af"} />
         </Link>
 
         <a
